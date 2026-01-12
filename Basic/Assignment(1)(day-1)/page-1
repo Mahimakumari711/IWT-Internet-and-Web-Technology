@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Internet and Web Technology Lab </title>
+</head>
+<body>
+<h1>Internet and Web Technology Basics</h1>
+<p>Web development is the process of designing, building, and maintaining websites and web applications. <br>
+It involves a range of tasks, including coding, technical design, and performance optimization.</p><br>
+<p> The field is divided into three main types: front-end development (user interface), 
+back-end development (server-side logic), and full-stack development (combining both front-end and back-end components). 
+Web development plays a crucial role in creating interactive and user-friendly online experiences, driving engagement and business growth.</p><br>
+<a href ="https://en.wikipedia.org/wiki/Web_development">Read More </a>
+<a href ="https://www.bing.com/search?filters=ufn%3a%22Google%22+sid%3a%22f39b29ec-05ee-d6cb-3070-ddaa0fb00ee0%22&asbe=SC&qs=MB&pq=gool&sk=CSYN1&sc=16-4&pglt=2083&q=google&cvid=ae55d79193ce4c8e871291e823d3a973&gs_lcrp=EgRlZGdlKgYIARAuGEAyBggAEEUYOTIGCAEQLhhAMgYIAhAAGEAyBggDEC4YQDIGCAQQLhhAMgYIBRAuGEAyBggGEC4YQDIGCAcQLhhAMgYICBAuGEDSAQgyNTY2ajBqMagCCLACAQ&FORM=ANNTA1&PC=U531">Google</a><br>
+<br><img src="C:\Users\Silicon\Documents\24bcsf87\Assignment - 1\web-development.jpg" width="485" height="240">
+</body>
+</html>
