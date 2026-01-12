@@ -1,0 +1,19 @@
+<html>
+<body>
+<h1> Images of rare flower : </h1>
+
+<img src ="C:\Users\Silicon\Documents\24bcsf87\Assignment- 2\flower1.jpg" width="237" height="147">
+<br>
+<img src ="C:\Users\Silicon\Documents\24bcsf87\Assignment- 2\flower2.jpg" width="200" height="250">
+<br>
+<img src ="C:\Users\Silicon\Documents\24bcsf87\Assignment- 2\flower 3.jpg" width="400" height="250">
+<br>
+<img src ="C:\Users\Silicon\Documents\24bcsf87\Assignment- 2\flower4.jpg" width="128" height="128">
+
+<h4>To explore more pages of our website by clicking below </h4>
+<br>
+<a href="C:\Users\Silicon\Documents\24bcsf87\Assignment- 2/web_page-1.html"><button> Page 1</button></a>
+<a href="C:\Users\Silicon\Documents\24bcsf87\Assignment- 2/web_page-3.html"><button> Page 3</button></a>
+
+</body>
+</html>
