@@ -1,0 +1,11 @@
+<html>
+<boby>
+<h1>This is my third page <h1>
+<h2> Multiple links and other web page </h2>
+<a href = " C:\Users\Silicon\Documents\24bcsf87\first_web_page.html" > Click here to go in first page </a>
+<p></p>
+<a href = " C:\Users\Silicon\Documents\24bcsf87\second_page.html" > Click here to go in second page </a>
+<p></p>
+<a href = " https://erp.silicon.ac.in/estcampus/ " > Click here for silicon login page </a>
+</body>
+</html>
