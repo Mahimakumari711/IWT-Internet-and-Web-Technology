@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1>This is my second web page </h1>
+<h3>Link and image </h3>
+<a href = "C:\Users\Silicon\Documents\24bcsf87\first_web_page.html"> This is a link </a>
+<p></p>
+<img src = "C:\Users\Silicon\Documents\24bcsf87\image1.jpg " width= "237" height = "180">
+<img src = "C:\Users\Silicon\Documents\24bcsf87\OIP.jpg " width= "267" height = "180">
+</body>
+</html>
