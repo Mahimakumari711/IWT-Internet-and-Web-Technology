@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+table,th,td {
+border : 1px solid black;
+}
+</style>
+	<title>My first table </title>
+<body>
+		<table style = "width : 50% "><caption>Student Details </caption>
+		<tr>
+			<th>Name</th>
+			<th>Roll No </th>
+			<th>Branch</th>
+		</tr>
+		
+		<tr>
+		<td>Abhipsa</td>
+		<td>121</td>
+		<td>CSE</td>
+		</tr>
+		
+		<tr>
+		<td>Akash</td>
+		<td>131</td>
+		<td>CSE</td>
+		</tr>
+		
+		<tr>
+		<td>Soni</td>
+		<td>141</td>
+		<td>ECE</td>
+		</tr>
+		
+		<tr>
+		<td>Sita</td>
+		<td>151</td>
+		<td>EEE</td>
+		</tr>
+		<tr>
+		<td>Mohan</td>
+		<td>161</td>
+		<td>CSE</td>
+		</tr>	
+	</table>
+</body>
+</html>
