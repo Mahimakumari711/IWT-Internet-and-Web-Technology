@@ -1,0 +1,38 @@
+<html> 
+<head> 
+<title>Navigation Menu</title> 
+</head> 
+<body> 
+<h2><a href ="#basic">Basic Tags</a></h2> 
+<h2><a href ="#list">Lists</a></h2> 
+<h2><a href ="#format">Formatting Tags </a></h2> 
+<h4>Basic Tags </h4> 
+<p id="basic"> 
+Usually, most of the HTML tags contain an opening and a closing tag.<br> 
+Each tag has a different meaning, and the browser reads the tags <br> 
+and displays the contents enclosed by them accordingly.<br> 
+<br> 
+For example, if we wrap any text in the paragraph tag, <br> 
+the browser displays it as a separate paragraph.<br> 
+In this tutorial, we will discuss all the basic tags in HTML. 
+</p> 
+<h4>List</h4> 
+<p id="list"> 
+<ul> 
+<li>Item1</li> 
+<li>Item2</li> 
+<li>Item3</li> 
+<li>Item4</li> 
+<li>Item5</li> 
+<li>Item6</li> 
+</ul> 
+</p> 
+<h4>Formatting Tags</h4> 
+<p id="format"> 
+  Formatting tags in HTML are specific HTML elements used to modify the appearance and structure of text on a webpage.<br> 
+  They allow you to style text in various ways, such as making it bold, italic, or underlined, <br> 
+  and controlling aspects like font size and alignment.Common formatting tags bold text, italic text,<br> 
+  and underlined text.These tags help enhance the readability and visual appeal of web content<br> 
+</p> 
+</body> 
+</html> 
