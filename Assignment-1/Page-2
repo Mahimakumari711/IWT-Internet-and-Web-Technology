@@ -3,13 +3,36 @@
 <title>List</title>
 </head>
 <body>
-<h2>List of wb browsers</h2>
+<h2>List of web browsers</h2>
 <ul>
 <li>Browser</li>
-<li>OPera</li>
+<li>Opera</li>
 <li>Edge</li>
 <li>Chrome</li>
 <li>Internet explorer</li>
-</u>
+</ul>
+<h2>List of programming languages</h2>
+<ol>
+<li>Python</li>
+<li>JavaScript</li>
+<li>PHP</li>
+<li>C</li>
+<li>C++</li>
+</ol>
+<h2>Nested list</h2>
+<ul>
+<li>Frontend Technologies</li>
+<ol>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ol>
+<li>Backend Technologies</li>
+<ol>
+<li>Java</li>
+<li>Python</li>
+<li>PHP</li>
+</ol>
+</ul>
 </body>
 </html>
