@@ -2,10 +2,14 @@
 <head>
 <title>Form-1</title>
 </head>
+<body>
+<fieldset>
+<legend>Information</legend>
 <form>
 <input type="text" name="fname" placeholder="Enter your first name "><br><br>
 <input type="text" name="lname" placeholder="Enter your last name "><br><br>
 <input type="submit" name="submit">
 </form>
+</fieldset>
 </body>
 </html>
