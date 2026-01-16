@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Form designing</title>
+</head>
+<body>
+<p>Enter your name</p>
+<form>
+<input type="text" name="nm" placeholder="Type here"><br><br>
+<label for="fname">First name : </label><br>
+<input type="text" id="frame" name="frame"><br>
+<label for="lname">Last name : </label><br>
+<input type="text" id="lname" name="lname">
+</form>
+</body>
+</html>
