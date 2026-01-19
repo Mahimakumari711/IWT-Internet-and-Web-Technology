@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Demo</title>
+<style>
+table 
+{
+border-collapse:collapse;
+width:80%;
+margin:auto;
+}
+th,td {
+border:2px solid black;
+padding"10px;
+text-align:center;
+}
+th {
+font-weight:bold;
+}
+caption {
+font-size:24px;
+font-weight:bold;
+margine-bottom:10px;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Roll No.</th>
+<th>Name</th>
+<th>Email</th>
+<th>Mobile No.</th>
+<th>Profile photo</th>
+</tr>
+<td>101</td>
+<td>Mohan Singh</td>
+<td>mohan@gmail.com</td>
+<td>123456789</td>
+<td><img src="https://static.vecteezy.com/system/resources/previews/005/544/708/non_2x/profile-icon-design-free-vector.jpg" alt="profile" width="150" height="150"></td>
+</tr>
+<tr>
+<td>102</td>
+<td>Pushpa Kumari</td>
+<td>pushpa@gmail.com</td>
+<td>99887766</td>
+<td><img src="https://static.vecteezy.com/system/resources/previews/005/544/708/non_2x/profile-icon-design-free-vector.jpg" alt="profile" width="150" height="150"></td>
+</tr>
+</table>
+</body>
+</html>
