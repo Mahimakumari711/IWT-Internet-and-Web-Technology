@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Demo-5</title>
+</head>
+<body>
+<audio>
+<source scr="C:\Users\Silicon\Documents\Downloads\Kabhi Kabhi-320kbps.mp3" type="mp3">
+</audio>
+<br><br>
+<video>
+<source src="https://youtu.be/0VvIMEIjkq8" type="">
+</video>
+<br><br>
+<video src="" control></video>
+</body>
+</html>
