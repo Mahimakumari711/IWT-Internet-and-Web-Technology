@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Online Course Registration</title>
+    <style>
+        form {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h2>Online Course Registration Form</h2>
+<form>
+    <label>Full Name:</label>
+    <input type="text" name="fullname"><br><br>
+    
+    <label>Email:</label>
+    <input type="email" name="email"><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password"><br><br>
+
+    <label>Confirm Password:</label>
+    <input type="password" name="confirm_password"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Other<br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob"><br><br>
+
+    <label>Course:</label><br>
+    <select name="course">
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>MCA</option>
+        <option>MBA</option></select><br><br>
+    
+    <label>Skills:</label><br>
+    <input type="checkbox"> HTML
+    <input type="checkbox"> CSS
+    <input type="checkbox"> JavaScript
+    <input type="checkbox"> Python
+    <input type="checkbox"> Java<br><br>
+
+    <label>Address:</label><br>
+    <textarea rows="4" cols="40"></textarea><br><br>
+    
+    <label>Upload Resume:</label><br>
+    <input type="file"><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
