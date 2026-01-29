@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>My Profile</title>
+    <style>
+        header,
+        nav,
+        main,
+        section,
+        footer {
+            margin: 15px;
+            padding: 10px;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Name</h1>
+        <p>Phone: 123456789</p>
+        <p>Email: abc@gmail.com</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#hobbies">Hobbies</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg"
+                alt="Profile Image" width="150">
+            <p>
+                I am a btech second year student . Currently I am learning HyperText Markup Language.
+                It is the foundational language for creating web pages and web applications.
+            </p>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>B.Tech</td>
+                    <td>ABC College</td>
+                    <td>2024</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>XYZ Junior College</td>
+                    <td>2020</td>
+                    <td>82%</td>
+                </tr>
+            </table>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Learning new skill</li>
+                <li>Listening to Music</li>
+                <li>Playing Cricket</li>
+                <li>Coding</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Contact me with :</p>
+        <a href="https://www.facebook.com">Facebook</a> &nbsp &nbsp &nbsp &nbsp|&nbsp &nbsp &nbsp &nbsp
+        <a href="https://www.instagram.com">Instagram</a> &nbsp &nbsp &nbsp &nbsp|&nbsp &nbsp &nbsp &nbsp
+        <a href="https://www.linkedin.com">LinkedIn</a>
+    </footer>
+</body>
+</html>
