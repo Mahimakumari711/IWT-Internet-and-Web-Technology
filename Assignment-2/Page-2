@@ -1,63 +1,64 @@
 <html>
 <head>
 <style>
-table,th,td {
-border : 1px solid black;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
 }
 </style>
-<title>Table</title>
+<title>Class Timetable</title>
 </head>
+
 <body>
+
 <table>
 <tr>
-<th></th>
-<th colspan="4">Class TimeTable</th>
-<th></th>
-<th></th>
+  <th colspan="4">Class Timetable</th>
 </tr>
 
 <tr>
-<th>Day</th>
-<th>9:00 - 11:00</th>
-<th>11:00 - 1:00</th>
-<th>2:00 - 4:00</th>
+  <th>Day</th>
+  <th>9:00 - 11:00</th>
+  <th>11:00 - 1:00</th>
+  <th>2:00 - 4:00</th>
 </tr>
 
 <tr>
-<th>Monday</th>
-<td rowspan="2">Computer Networks Lab</td>
-<td>Mathematics</td>
-<td>Database</td>
+  <th>Monday</th>
+  <td rowspan="2">Computer Networks Lab</td>
+  <td>Mathematics</td>
+  <td>Database</td>
 </tr>
 
 <tr>
-<th>Tuesday</th>
-<td></td>
-<td>Operating System</td>
-<td>Web Technology</td>
+  <th>Tuesday</th>
+  <td>Operating System</td>
+  <td>Web Technology</td>
 </tr>
 
 <tr>
-<th>Wednesday</th>
-<td>Mathematics</td>
-<td colspan="2">Mini Project</td>
-<td></td>
+  <th>Wednesday</th>
+  <td>Mathematics</td>
+  <td colspan="2">Mini Project</td>
 </tr>
 
 <tr>
-<th>Thrusday</th>
-<td>Database</td>
-<td>Operating System</td>
-<td>Web Technology</td>
+  <th>Thursday</th>
+  <td>Database</td>
+  <td>Operating System</td>
+  <td>Web Technology</td>
 </tr>
 
 <tr>
-<th>Friday</th>
-<td colspan="4">Seminar & Workshop</td>
-<td></td>
-<td></td>
+  <th>Friday</th>
+  <td colspan="3">Seminar & Workshop</td>
 </tr>
 
 </table>
+
 </body>
 </html>
