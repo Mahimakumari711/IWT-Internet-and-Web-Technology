@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Multimedia Integration Demo</title>
+</head>
+<body>
+<h2>Multimedia Integration </h2>
+<h3>Audio Player</h3>
+<audio controls>
+    <source src="https://www.myinstants.com/en/instant/emotional-damage-meme-74555/?utm_source=copy&utm_medium=share" type="mp3"></audio>
+<br><br>
+<h3>Video Player</h3>
+<video width="400" controls>
+    <source src="https://vlipsy.com/clips/8HdVQCC3" type="mp4">
+</video>
+</body>
+</html>
