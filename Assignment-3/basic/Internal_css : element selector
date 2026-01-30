@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>ABC</title>
+<style type="text/css">
+p{
+color : red;
+background : indigo;
+}
+</style>
+</head>
+</body>
+<p>Welcome to internal css by using element selector </p>
+</body>
+</html>
