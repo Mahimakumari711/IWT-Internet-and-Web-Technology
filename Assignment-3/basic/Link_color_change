@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Interaction</title>
+<style type="text/css">
+a:hover
+{
+background:red;
+}
+a:link
+{
+background:green;
+}
+a:visited
+{
+background:blue;
+}
+a:active
+{
+background:pink;
+}
+</style>
+</head>
+<body>
+<a href="https://www.bing.com/search?qs=AS&pq=google&sk=CSYN1UAS8AS11LS1FT1&sc=25-6&pglt=43&q=google&cvid=75cf5a8dda7d42b8a88ca71e403adf7a&gs_lcrp=EgRlZGdlKgYIABAAGEAyBggAEAAYQDIGCAEQLhhAMgYIAhAAGEAyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg8MgYICBBFGDzSAQg0OTY1ajBqMagCCLACAQ&FORM=ANNTA1&PC=U531">pseudo selector</a>
+</body>
+</html>
