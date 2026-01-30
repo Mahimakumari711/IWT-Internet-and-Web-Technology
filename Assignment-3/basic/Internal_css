@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>abc</title>
+<style>
+p
+{
+color:red;
+background:indigo;
+}
+</style>
+</head>
+<body>
+<p>Welcome to internal css</p>
+</body>
+</html>
