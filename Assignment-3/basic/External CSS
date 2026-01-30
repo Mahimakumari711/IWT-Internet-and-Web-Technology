@@ -1,14 +1,9 @@
 <html>
 <head>
-<title>Page 4</title>
-<style type="text/css">
-p {
-	color: red;
-	background: indigo;
-}
-</style>
+<title>abc</title>
+<link rel="stylesheet" type="text/css" href="Demo.css">
 </head>
 <body>
-<p id="a">Welcome to Internal CSS</p>
+<p>Welcome to external css</p>
 </body>
 </html>
