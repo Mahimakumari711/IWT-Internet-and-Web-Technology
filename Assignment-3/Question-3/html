@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <title>External CSS </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Image </h1>
+    <image scr="C:\Users\mahim\OneDrive\Pictures\2109963.jpg" alt="Web Development" class="photo-frame"></image>
+  </body>
+</html>
