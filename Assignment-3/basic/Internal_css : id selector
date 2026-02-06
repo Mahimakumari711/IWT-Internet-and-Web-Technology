@@ -1,15 +1,15 @@
 <html>
 <head>
-<title>Id selector </title>
+<title>Id Selector</title>
 <style type="text/css">
-p
+#a
 {
-color : red;
-background : indigo;
+color:red;
+background:indigo;
 }
 </style>
 </head>
 <body>
-<p id= a >Welcome to internal css </p>
+<p id="a">Welcome to internal CSS (id selector)</p>
 </body>
 </html>
