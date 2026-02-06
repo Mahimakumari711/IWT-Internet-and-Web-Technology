@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Importance of CSS in Web Design</title>
+    <style>
+    p 
+    {
+      font-family: arial,sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    </style>
+  </head>
+  <body>
+    <p>CSS, or Cascading Style Sheets, is a cornerstone technology in web development that defines the presentation and layout of HTML documents. 
+    While HTML provides the structure and content of a webpage, CSS is responsible for its visual styling, including colors, fonts, spacing, and overall design. 
+    This separation of content and design enhances maintainability and scalability in web projects.
+
+CSS operates on the principle of cascading, where styles are applied based on specificity, inheritance, and source order. 
+This allows developers to define rules that can be reused across multiple pages, ensuring consistency and reducing redundancy.</p>
+  </body>
+</html>
