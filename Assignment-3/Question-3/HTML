@@ -1,0 +1,11 @@
+<html>
+  <head> 
+    <title>External CSS </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>Image </h1>
+    <img src="https://wallpapers.com/images/hd/cool-profile-picture-ld8f4n1qemczkrig.jpg" 
+    alt="Web Development" class="photo-frame" height="250" width="150"></img>
+  </body>
+</html>
