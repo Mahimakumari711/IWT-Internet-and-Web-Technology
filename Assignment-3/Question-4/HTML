@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Student Mark Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>RollNo</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ram Singh</td>
+                <td>Math</td>
+                <td>85</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Soni Ojha</td>
+                <td>Physics</td>
+                <td>92</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Mohan Kumar</td>
+                <td>Chemistry</td>
+                <td>78</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
