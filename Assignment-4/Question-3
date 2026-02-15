@@ -1,57 +1,96 @@
 <html>
-    <head>
-        <title>E Commerce Webpage</title>
-        <style type="text/css">
-        body
-            {
-                background-color:lightgray;
-                display:flex;
-                justify-content:center;
-                align-items:center;
-            }
+<head>
+    <title>E Commerce Webpage</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial;
+        }
 
-            .card
-            {
-                background-color:white;
-                text-align:center;
-                border-radius:15px;
-                width:400px;
-                height:300px;
-            }
-            button
-            {
-                background-color:blueviolet
-                text-color:white;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-            <h2>Featured Products</h2>
-            <div  class="card">
-                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6566/6566040_rd.jpg" alt="PS5" width="150" height="150">
-                <h3>PS 5 </h3>
-                <p>Price : Rs.54,990</p>
-                <button>Add to card</button>
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: lightgreen  ;
+            border-radius: 15px;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-weight: bold;
+            color: green;
+        }
+
+        button {
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Featured Products</h2>
+
+        <div class="products">
+            
+            <div class="card">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6566/6566040_rd.jpg" alt="PS5">
+                <h3>PS5</h3>
+                <p>Price: Rs. 54,990</p>
+                <button>Add to Cart</button>
             </div>
-            <div  class="card">
-                <img src="https://tse1.mm.bing.net/th/id/OIP.mzj-1_VKdYbP10MV6G8YGgHaHa?cb=defcachec2&w=2789&h=2789&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gaming PC" width="150" height="150">
-                <h3>Gaming PC </h3>
-                <p>Price : Rs. 70,000 </p>
-                <button>Add to card</button>
+
+            <div class="card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.mzj-1_VKdYbP10MV6G8YGgHaHa?cb=defcachec2&w=2789&h=2789&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gaming PC">
+                <h3>Gaming PC</h3>
+                <p>Price: Rs. 70,000</p>
+                <button>Add to Cart</button>
             </div>
-            <div  class="card">
-                <img src="https://m.media-amazon.com/images/I/61MkPpDCwVL._AC_SL1500_.jpg" alt="Gaming controller" width="150" height="150">
-                <h3>Gaming controller </h3>
-                <p>Price : Rs.10,000</p>
-                <button>Add to card</button>
+
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/61MkPpDCwVL._AC_SL1500_.jpg" alt="Gaming Controller">
+                <h3>Gaming Controller</h3>
+                <p>Price: Rs. 10,000</p>
+                <button>Add to Cart</button>
             </div>
-            <div  class="card">
-                <img src="https://m.media-amazon.com/images/I/71d3Yo6qgNL._AC_SL1500_.jpg" alt="PS5" width="150" height="150">
-                <h3>gaming Table </h3>
-                <p>Price : Rs.25,000 </p>
-                <button>Add to card</button>
+
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/71d3Yo6qgNL._AC_SL1500_.jpg" alt="Gaming Table">
+                <h3>Gaming Table</h3>
+                <p>Price: Rs. 25,000</p>
+                <button>Add to Cart</button>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
