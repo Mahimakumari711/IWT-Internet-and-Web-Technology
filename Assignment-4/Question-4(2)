@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Question-4</title>
+<style>
+.header
+{
+color:white;
+background-color:green;
+text-align:center;
+height:200px;
+}
+
+.footer
+{
+color:white;
+background-color:green;
+height:200px;
+text-align:center;
+}
+
+.nav
+{
+background-color:black;
+color:white;
+text-align:center;
+margin:15px;
+padding:10px;
+height:30px;
+}
+
+.nav:hover
+{
+color:red;
+}
+
+a
+{
+color:white;
+margin:25px;
+
+gap:20px;
+}
+.container
+{
+align-item:center;
+}
+
+.card 
+{
+background-color: white;
+width: 320px;
+padding: 25px;
+border-radius: 15px;
+text-align: center;
+box-shadow: 0px 4px 10px gray;
+justify-content:center;
+}
+
+.profile-img 
+{
+width: 120px;
+height: 120px;
+border-radius: 50%;
+border: 4px solid green;
+object-fit: cover;
+margin-bottom: 15px;
+}
+
+body
+{
+background-color:lightgray;
+}
+
+.product
+{
+display:flex;
+}
+
+.button
+{
+background-color:red;
+align-item:right;
+}
+
+</style>
+</head>
+<body>
+<header class="header">
+<h2>My Profile</h2>
+<p>
+This web page is about my porfile. Through this web site you will know about me .
+My education and about me hobbies.
+</p>
+</header>
+<nav class="nav">
+<a href=#about>About</a>
+<a href=#education>Education</a>
+<a href=#hobby>Hobby</a>
+</nav>
+
+<main>
+<section id="about">
+<h3>About </h3>
+<div class="container">
+<div class="card">
+<img src="https://img.freepik.com/premium-psd/cartoon-beautiful-female-teenager-character-with-blonde-hair-wearing-black-cap_831490-3192.jpg?w=360" 
+alt="Profile Image" class="profile-img">
+<h4>Mahima Kumari</h4>
+<p>
+A passionate web developer who loves building interactive websites.
+</p>
+<div class="info">&#x2709; abc@gmail.com</div>
+<div class="info">&#x260E; +91-123456789</div>
+</div>
+</div>
+</section>
+<section id="eduction">
+<h3>Education</h3>	
+<p>
+I am a Btech second year student currently studying in XYZ University.
+My branch is computer science engineering .
+</p>
+</section>
+<section id="hobby">
+<h3>Hobby<h3>
+<ul>
+<li>Web Page Development</li>
+<li>Editing</li>
+<li>Studying</li>
+</ul>
+</section>
+</main>
+<footer class="footer">
+<h2>&copy; Mahima Kumari </h2>
+<a href="https://www.facebook.com/">Facebook</a>
+<a href="https://www.instagram.com/">Instagram</a>
+<a href="https://github.com/">Github</a>
+<a href="C:\Users\Silicon\Documents\24bcsf87\Assignment - 2\Demo-6.html" ><button>Click me</button></a>
+</footer>
+</body>
+</html>
