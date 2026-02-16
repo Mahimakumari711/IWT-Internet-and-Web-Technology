@@ -78,8 +78,11 @@ display:flex;
 
 .button
 {
-background-color:red;
+background-color:yellow;
 align-item:right;
+border-radius:15px;
+width:45px;
+heigth:40px;
 }
 
 </style>
@@ -134,8 +137,8 @@ My branch is computer science engineering .
 <h2>&copy; Mahima Kumari </h2>
 <a href="https://www.facebook.com/">Facebook</a>
 <a href="https://www.instagram.com/">Instagram</a>
-<a href="https://github.com/">Github</a>
-<a href="C:\Users\Silicon\Documents\24bcsf87\Assignment - 2\Demo-6.html" ><button>Click me</button></a>
+<a href="https://github.com/">Github</a><br><br>
+<a href="C:\Users\Silicon\Documents\24bcsf87\Assignment - 2\Demo-6.html" ><button class="button">Click me</button></a>
 </footer>
 </body>
 </html>
