@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Largest between three number </title>
+<script>
+var a=12,b=76,c=45;
+if(a>b)
+if(a>c)
+document.write("a is largest ");
+else
+document.write("c is largest ");
+else
+document.write("b is largest ");
+</script>
+</head>
+<body bgcolor="Green" text="voilet">
+</body>
+</html>
