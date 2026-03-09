@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Series</title>
+<script>
+var i=1,n=7,c=0;
+while (i<=n){
+if(n%i==0){
+c++;
+}
+i++
+}
+if(c==2){
+document.write("<h1>Number is prime </h1>");
+}
+else{
+document.write("<h1> Number is not prime </h1>");
+}
+</script>
+</head>
+<body bgcolor="orange" text="blue">
+</body>
+</html>
