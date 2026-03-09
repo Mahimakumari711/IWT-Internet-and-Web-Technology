@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>ABC</title>
+</head>
+<script>
+var a=5,b=6;
+document.write("Value of variable before swappping a = "+a+" b = "+b+"<br>");
+a=a+b;
+b=a-b;
+a=a-b;
+document.write("Value of variable after swapping a = "+a+" b = "+b);
+</script>
+</head>
+<body bgcolor="orange" text="brown">
+</body>
+</html>
