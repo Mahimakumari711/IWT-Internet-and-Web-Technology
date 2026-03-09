@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>ABC</title>
+</head>
+<script>
+var r=6,a,c;
+a=3.141*r*r;
+c=2*3.141*r;
+document.write("Area of the circle = "+a+"<br>");
+document.write("Circumference of circle = "+c);
+</script>
+</head>
+<body bgcolor="pink" text="voilet">
+</body>
+</html>
