@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>abc</title>
+<script>
+var a=5,b=4,c;
+c=a+b;
+document.write("addition value = "+c);
+console.log("addition of two number is = "+c)
+</script>
+</head>
+<body bgcolor="pink" text="violet">
+</body>
+</html>
