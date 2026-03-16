@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Array</title>
+<script>
+var a = new Array(3,66,12,70,5);
+var i;
+for (i=0;i<5;i++)
+{
+document.write(a[i]+"<br>");
+}
+</script>
+</head>
+<body bgcolor="red" text="blue" >
+</body>
+</html>
