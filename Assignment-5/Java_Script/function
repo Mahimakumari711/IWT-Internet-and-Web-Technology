@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Addition of two number using function </title>
+<script>
+var a,b;
+a=prompt("Enter the first number : ");
+b=prompt("Enter the second number : ");
+
+document.write("Power : "+pow(a,b));
+document.write("Square : "+sqrt(a,b));
+document.write("Ceiling of number : "+ceil(a,b));
+document.write("floor of number : "+floor(a,b));
+document.write("Round off a number  : "+round(a,b));
+document.write("Absolute number  : "+abs(a,b));
+document.write("Sin : "+sin(a,b));
+document.write("cos : "+cos(a,b));
+document.write("tan : "+tan(a,b));
+document.write("Maximum number : "+max(a,b));
+document.write("Minimun number : "+min(a,b));
+
+
+</script>
+</head>
+<body bgcolor="yellow" text="brown">
+</body>
+</html>
