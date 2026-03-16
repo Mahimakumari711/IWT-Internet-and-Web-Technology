@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Addition of two number using function </title>
+<script>
+function add(a,b)
+{
+c=a+b;
+return c;
+}
+document.write("Result of addition of two number "+add(4,6));
+</script>
+</head>
+<body bgcolor="yellow" text="brown">
+</body>
+</html>
