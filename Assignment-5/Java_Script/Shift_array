@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Shift and unshift</title>
+<script>
+var i,b,c;
+var a=new Array(1,2,3,4,5);
+
+for(i=0;i<=4;i++)
+{
+console.log("Arrar elements are : "+a[i]);
+}
+
+var b=a.shift();
+console.log(b);
+
+var c=a.unshift(11,22);
+console.log(c);
+
+</script>
+<body bgcolor="yellow" text="brown" >
+</body>
+</html>
