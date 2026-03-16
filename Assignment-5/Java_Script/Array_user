@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Array</title>
+<script>
+var i;
+for (i=0;i<5;i++)
+{
+var a = new Array(prompt("Enter the numbers "));
+}
+for (i=0;i<5;i++)
+{
+document.write(a[i]+"<br>");
+}
+</script>
+</head>
+<body bgcolor="red" text="blue" >
+</body>
+</html>
