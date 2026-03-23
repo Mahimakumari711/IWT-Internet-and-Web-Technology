@@ -2,17 +2,18 @@
 <head>
 <title>Array</title>
 <script>
-var i;
-for (i=0;i<5;i++)
-{
-var a = new Array(prompt("Enter the numbers "));
+var a = new Array();  
+
+for (i = 0; i < 5; i++) {
+    a[i] = prompt("Enter number " + (i+1));  
 }
-for (i=0;i<5;i++)
-{
-document.write(a[i]+"<br>");
+
+document.write("Entered numbers:<br>");
+for (i = 0; i < 5; i++) {
+    document.write(a[i] + "<br>");  
 }
 </script>
 </head>
-<body bgcolor="red" text="blue" >
+<body bgcolor="red" text="blue">
 </body>
 </html>
