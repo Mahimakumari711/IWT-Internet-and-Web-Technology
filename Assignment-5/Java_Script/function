@@ -1,24 +1,26 @@
 <html>
 <head>
-<title>Addition of two number using function </title>
+<title>Addition of two number using function</title>
 <script>
-var a,b;
-a=prompt("Enter the first number : ");
-b=prompt("Enter the second number : ");
+function add(a, b) {
+    return a + b;
+}
 
-document.write("Power : "+pow(a,b));
-document.write("Square : "+sqrt(a,b));
-document.write("Ceiling of number : "+ceil(a,b));
-document.write("floor of number : "+floor(a,b));
-document.write("Round off a number  : "+round(a,b));
-document.write("Absolute number  : "+abs(a,b));
-document.write("Sin : "+sin(a,b));
-document.write("cos : "+cos(a,b));
-document.write("tan : "+tan(a,b));
-document.write("Maximum number : "+max(a,b));
-document.write("Minimun number : "+min(a,b));
+var a = parseFloat(prompt("Enter the first number : "));
+var b = parseFloat(prompt("Enter the second number : "));
 
-
+document.write("Addition: " + add(a, b) + "<br>");
+document.write("Power: " + Math.pow(a, b) + "<br>");
+document.write("Square root of first number: " + Math.sqrt(a) + "<br>");
+document.write("Ceiling of first number: " + Math.ceil(a) + "<br>");
+document.write("Floor of first number: " + Math.floor(a) + "<br>");
+document.write("Round off first number: " + Math.round(a) + "<br>");
+document.write("Absolute value of first number: " + Math.abs(a) + "<br>");
+document.write("Sin of first number (radians): " + Math.sin(a) + "<br>");
+document.write("Cos of first number (radians): " + Math.cos(a) + "<br>");
+document.write("Tan of first number (radians): " + Math.tan(a) + "<br>");
+document.write("Maximum number: " + Math.max(a, b) + "<br>");
+document.write("Minimum number: " + Math.min(a, b) + "<br>");
 </script>
 </head>
 <body bgcolor="yellow" text="brown">
