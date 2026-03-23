@@ -3,18 +3,35 @@
 <title>Prime</title>
 </head>
 <body bgcolor=orange text=brown>
-Enter number: <input id="num" type=number maxlength=3>
-<button onclick="n=parseInt(document.getElementById('num').value);
-i=1;
-c=0;
-while(i<=n){
-if(n%i==0){
-c++;
-i++;
-}
-}
-document.getElementById('result').innerHTML=c==2?'<h1>Prime</h1>':'<h1>Not Prime</h1>';">Check
-</button>
+Enter number: <input id="num" type=number maxlength=3 min=2>
+<button onclick="checkPrime()">Check</button>
 <div id="result"></div>
+
+<script>
+function checkPrime() {
+    var n = parseInt(document.getElementById('num').value);
+    var i = 2;
+    var c = 0;
+    
+    if (n < 2 || isNaN(n)) {
+        document.getElementById('result').innerHTML = '<h1>Invalid</h1>';
+        return;
+    }
+    
+    while (i * i <= n) {
+        if (n % i == 0) {
+            c++;
+            break;
+        }
+        i++;
+    }
+    
+    if (c == 0) {
+        document.getElementById('result').innerHTML = '<h1>Prime</h1>';
+    } else {
+        document.getElementById('result').innerHTML = '<h1>Not Prime</h1>';
+    }
+}
+</script>
 </body>
 </html>
