@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>CALCULATOR</title>
+<style>
+body{
+font-family:Arial;
+text-align: center;
+}
+button{
+width: 45px;
+height: 45px;
+font-size: 18px;
+margin: 5px;
+curson: pointer;
+transition: 0.2s;
+background: #444;
+color: white;
+}
+input{
+width: 200px;
+height: 40px;
+font-size:20px;
+text-align: right;
+margin-bottom: 5px;
+}
+table{
+margin:auto;
+}
+button.operator{
+background: orange;
+color: white;
+}
+button.equal{
+background: #00c853;
+color: white;
+}
+button.clear{
+background: red;
+color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>CALCULATOR</h2>
+<input type="text" id="result" readonly><br>
+
+<table border="1" cellspacing="5">
+
+<tr>
+<td>
+<button onclick="addNumber('1')">1</button>
+</td>
+<td>
+<button onclick="addNumber('2')">2</button>
+</td>
+<td>
+<button onclick="addNumber('3')">3</button>
+</td>
+<td>
+<button onclick="addNumber('+')">+</button>
+</td>
+</tr>
+<tr>
+<td>
+<button onclick="addNumber('4')">4</button>
+</td>
+<td>
+<button onclick="addNumber('5')">5</button>
+</td>
+<td>
+<button onclick="addNumber('6')">6</button>
+</td>
+<td>
+<button onclick="addNumber('*')">*</button>
+</td>
+</tr>
+<tr>
+<td>
+<button onclick="addNumber('7')">7</button>
+</td>
+<td>
+<button onclick="addNumber('8')">8</button>
+</td>
+<td>
+<button onclick="addNumber('9')">9</button>
+</td>
+<td>
+<button onclick="addNumber('-')">-</button>
+</td>
+</tr>
+<tr>
+<td>
+<button onclick="clearResult()">C</button>
+</td>
+<td>
+<button onclick="addNumber('0')">0</button>
+</td>
+<td>
+<button onclick="calculate('=')">=</button>
+</td>
+<td>
+<button onclick="addNumber('/')">/</button>
+</td>
+</tr>
+<tr>
+<td>
+<button onclick="backspace()">Del</button>
+</td>
+</tr>
+</table>
+
+<script>
+function calculate()
+{
+let input=document.getElementById("result").value;
+let num1,num2,op;
+if(input.includes("+"))
+{
+	op = "+";
+	[num1, num2]=input.split("+");
+}
+else if(input.includes("-"))
+{
+	op = "-";
+	[num1, num2]=input.split("-");
+}
+else if(input.includes("*"))
+{
+	op = "*";
+	[num1, num2]=input.split("*");
+}
+else if(input.includes("/"))
+{
+	op = "/";
+	[num1, num2]=input.split("/");
+}
+num1=Number(num1);
+num2=Number(num2);
+let result;
+if(op=="+")
+result=num1+num2;
+else if(op=="-")
+result=num1-num2;
+else if(op=="*")
+result=num1*num2;
+else if(op=="/")
+{
+if(num2==0)
+{
+	document.getElementById("result").value="Error";
+	return;
+}
+result=num1/num2;
+}
+document.getElementById("result").value=result;
+}
+function addNumber(value)
+{
+document.getElementById("result").value+=value;
+}
+function clearResult()
+{
+document.getElementById("result").value=" ";
+}
+function backspace()
+{
+let display=document.getElementById("result");
+display.value=display.value.slice(0,-1);
+}
+</script>
+</body>
+</html>
