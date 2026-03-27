@@ -1,0 +1,13 @@
+<html>  
+<head>  
+    <script>  
+        let array = [2, 5, 0, 3, 8, 6, 6, 0], res = [];  
+        for (let i = 0; i < array.length; i++) {  
+            if (!res.includes(array[i])) {  
+                res.push(array[i]);  
+            }  
+        }  
+        document.write("Array with no duplicates: " + res);  
+    </script>  
+</head>  
+</html>
