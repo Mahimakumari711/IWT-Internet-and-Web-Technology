@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Prime Number</title>
+</head>
+<body>
+<h3>Check Prime Number </h3>
+<form onsubmit="checkPrime(); return false;">
+Enter a number : 
+<input type = "number" id="num" required>
+<br><br>
+<button type="submit">Check</button>
+</form>
+<script>
+function checkPrime()
+{
+var n = document.getElementById("num").value;
+var isPrime = true;
+if (n<=1) 
+{
+isPrime = false;
+}
+else
+{
+for(var i=2;i<n;i++)
+{
+if (n%i == 0)
+{
+isPrime = false;
+break;
+}
+}
+}
+if(isPrime) {
+alert (n+" is Prime Number");
+}
+else
+{
+alert(n+" is not a prime number");
+}
+}
+</script>
+</body>
+</html>
