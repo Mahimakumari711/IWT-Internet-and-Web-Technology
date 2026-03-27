@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Toggle Paragraph</title>
+</head>
+<body>
+<p id="MyPara">This is a paragraph. Click below to toggle it.</p>
+<button id="Tbutton" onclick="toggle()">Hide</button>
+<script>
+function toggle() {
+var p = document.getElementById("MyPara");
+var b = document.getElementById("Tbutton");
+
+if(p.style.display === "none") {
+p.style.display = "block";
+b.innerHTML = "Hide";
+}
+else {
+p.style.display = "none";
+b.innerHTML = "Show";
+}
+}
+</script>
+</body>
+</html>
