@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Currency Converter</title>
+<style>
+body {
+font-family:Arial;
+}
+.container 
+{
+width:300px;
+padding:20px;
+border:1px solid black;
+}
+input, select, button
+{
+margin:8px 0;
+width:100%;
+padding:5px;
+}
+#error
+{
+color:red;
+}
+</style>
+</head>
+<body>
+<div class="container"><h3>Currency Converter</h3>
+Amount :
+<input type="number" id="amount">
+From : <select id="form">
+<option value="">Select</option>
+<option value="USD">USD<option>
+<option value="EUR">EUR<option>
+<option value="GBP">GBP<option>
+<option value="INR">INR<option>
+<option value="AUD">AUD<option>
+</select>
+<button onclick="convertCurrency()">Convert</button>
+Converted Amount : 
+<input type="text" id="result" readonly>
+<p id="error"></p>
+</div>
+<script>
+constconversionRates={
+USD:{EUR:0.93,GBP:0.82,INR:82.74,AUD:1.47},
+EUR:{USD:1.80,GBP:0.88,INR:89.06,AUD:1.58},
+GBP:{USD:1.22,EUR:1.14,INR:101.5,AUD:1.80},
