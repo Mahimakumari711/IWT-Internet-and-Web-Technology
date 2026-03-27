@@ -1,10 +1,10 @@
 <html>
 <head>
-<title>Question-1</title>
+<title>DOM Manipulation</title>
 </head>
 <body>
-<h2 id ="heading" onclick="myFunction()" >Hello World</h2>
-
+<h2 id ="heading" >Hello World</h2>
+<button onclick="myFunction()"> Click </button>
 <script>
 function myFunction(){
 document.getElementById("heading").innerHTML = "Welcome to DOM Manipulation";
