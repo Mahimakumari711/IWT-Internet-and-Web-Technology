@@ -1,0 +1,16 @@
+<html>  
+<head>  
+    <script>  
+        function reverseArray(array) {  
+            for (let i = 0, j = array.length - 1; i < j; i++, j--) {  
+                let temp = array[i];  
+                array[i] = array[j];  
+                array[j] = temp;  
+            }  
+        }  
+        let array = [1, 2, 3, 4, 5];  
+        reverseArray(array);  
+        document.write("Array after reversing: " + array);  
+    </script>  
+</head>  
+</html> 
