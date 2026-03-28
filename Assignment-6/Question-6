@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Currency Converter</title>
+<style>
+body {
+font-family:Arial;
+}
+.container 
+{
+width:300px;
+padding:20px;
+border:1px solid black;
+}
+input, select, button
+{
+margin:8px 0;
+width:100%;
+padding:5px;
+}
+#error
+{
+color:red;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h3>Currency Converter</h3>
+Amount :
+<input type="number" id="amount">
+From : 
+<select id="from">
+<option value="">Select</option>
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="INR">INR</option>
+<option value="AUD">AUD</option>
+</select>
+To : 
+<select id="to">
+<option value="">Select</option>
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="INR">INR</option>
+<option value="AUD">AUD</option>
+</select>
+<button onclick="convertCurrency()">Convert</button>
+Converted Amount : 
+<input type="text" id="result" readonly>
+<p id="error"></p>
+</div>
+<script>
+const conversionRates = {
+  USD: { EUR: 0.93, GBP: 0.82, INR: 82.74, AUD: 1.47 },
+  EUR: { USD: 1.08, GBP: 0.88, INR: 89.06, AUD: 1.58 },
+  GBP: { USD: 1.22, EUR: 1.14, INR: 101.5, AUD: 1.80 },
+  INR: { USD: 0.012, EUR: 0.011, GBP: 0.0098, AUD: 0.018 },
+  AUD: { USD: 0.68, EUR: 0.63, GBP: 0.55, INR: 55.87 }
+};
+
+function convertCurrency() {
+  const amount = document.getElementById('amount').value;
+  const fromCurr = document.getElementById('from').value;
+  const toCurr = document.getElementById('to').value;
+  const resultField = document.getElementById('result');
+  const errorField = document.getElementById('error');
+  
+  errorField.textContent = '';
+  
+  if (!amount || !fromCurr || !toCurr) {
+    errorField.textContent = 'Please fill all fields.';
+    resultField.value = '';
+    return;
+  }
+  
+  if (fromCurr === toCurr) {
+    errorField.textContent = 'From and To currencies cannot be the same.';
+    resultField.value = '';
+    return;
+  }
+  
+  if (!conversionRates[fromCurr] || !conversionRates[fromCurr][toCurr]) {
+    errorField.textContent = 'Conversion rate not available.';
+    resultField.value = '';
+    return;
+  }
+  
+  const rate = conversionRates[fromCurr][toCurr];
+  const convertedAmount = (parseFloat(amount) * rate).toFixed(2);
+  resultField.value = convertedAmount;
+}
+</script>
+</body>
+</html>
