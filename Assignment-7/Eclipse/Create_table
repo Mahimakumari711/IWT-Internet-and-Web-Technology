@@ -1,0 +1,39 @@
+package pack;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.sql.SQLExeception;
+
+public class Createtable {
+	
+	public static void main(String[] args ) {
+		String driver="org.postgresql.Driver";
+		String url = "jdbc:postgresql://192.168.1.17/cse_db24";
+		String user ="24bcsf87";
+		String password = "24bcsf87";
+		String query = "CREATE TABLE StudentCSE (\r\n"
+			+"      roll_no INT PRIMARY KEY,\r\n"
+			+"      name VARCHAR(50),\r\n"
+			+"      age INT,\r\n"
+			+"      department VARCHAR(30),\r\n"
+			+"      cgpa numeric(4,2)\r\n"
+			+")";
+		try {
+			Connection con = DriverManager.getConnection(url, user, password);
+			
+			Statement stmt = con.createStatement();
+			
+			stmt.executeUpdate(query);
+			
+			System.out.println("Table 'STUDENTCSE' create successfully!");
+			
+			stmt.close();
+			con.close();
+			}
+		catch (SQLException e) {
+			System.out.println("Error creating table !");
+			e.printStackTrace();
+		}
+	}
+}
