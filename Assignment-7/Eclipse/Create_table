@@ -1,9 +1,6 @@
 package pack;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
-import java.sql.SQLExeception;
+import java.sql.*;
 
 public class Createtable {
 	
@@ -12,7 +9,7 @@ public class Createtable {
 		String url = "jdbc:postgresql://192.168.1.17/cse_db24";
 		String user ="24bcsf87";
 		String password = "24bcsf87";
-		String query = "CREATE TABLE StudentCSE (\r\n"
+		String query = "CREATE TABLE Students (\r\n"
 			+"      roll_no INT PRIMARY KEY,\r\n"
 			+"      name VARCHAR(50),\r\n"
 			+"      age INT,\r\n"
@@ -26,7 +23,7 @@ public class Createtable {
 			
 			stmt.executeUpdate(query);
 			
-			System.out.println("Table 'STUDENTCSE' create successfully!");
+			System.out.println("Table 'Students' create successfully!");
 			
 			stmt.close();
 			con.close();
