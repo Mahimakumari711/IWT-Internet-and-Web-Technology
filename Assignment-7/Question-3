@@ -1,0 +1,49 @@
+package pack;
+
+import java.sql.*;
+
+public class Insertdata {
+	public static void main(String [] args)
+	{
+		String url = "jdbc:postgresql://192.168.1.17/cse_db24";
+		String user ="24bcsf87";
+		String password = "24bcsf87";
+		
+		try 
+		{
+			Class.forName("org.postgresql.Driver");
+			Connection con = DriverManager.getConnection(url, user, password);
+			
+		String query = "INSERT INTO Students (roll_no, name, age, department, cgpa) VALUES (?, ?, ?, ?, ?)";
+		
+		PreparedStatement pst = con.prepareStatement(query);
+		
+		pst.setInt(1,101);
+		pst.setString(2,  "Rahul");
+		pst.setInt(3,20);
+		pst.setString(4,  "CSE");
+		pst.setDouble(5,8.5);
+		pst.executeUpdate();
+		
+		pst.setInt(1,102);
+		pst.setString(2,  "Anita");
+		pst.setInt(3,21);
+		pst.setString(4,  "ECE");
+		pst.setDouble(5,9.1);
+		pst.executeUpdate();
+		
+		System.out.println("Two student recoeds inserted successfully! ");
+		
+		pst.close();
+		con.close();
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}
+
+Output :
+
+Two student recoeds inserted successfully! 
