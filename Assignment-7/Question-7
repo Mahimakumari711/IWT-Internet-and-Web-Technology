@@ -1,0 +1,37 @@
+import java.sql.*;
+import java.util.Scanner;
+
+public class DeleteStudentRecord 
+{
+    public static void main (String [] args)
+    {
+        vString url ="jdbc:postgresql://192.168.1.17/cse_db24";
+		String username = "24bcsf87";
+		String password = "24bcsf87";
+		
+		Scanner sc = new Scanner (System.in);
+		
+		try 
+		{
+		    Class.forName("com.mysql.cj.jdbc.Driver");
+		    
+		    Connection con = DriverManager.getConnection(url, username, password);
+		    
+		    String sql = "DELETE FROM Students WHERE roll_no = ?";
+		    PreparedStatement pst = con.prepareStatement(sql);
+		    
+		    pst.setInt(1,rollNo);
+		    
+		    int result = pst.executeUpdate();
+		    
+		    if (result >0)
+		    {
+		        System.out.println("Record deleted successfully. ");
+		    }
+		    else
+		    {
+		        System.out.println("No record found with given roll number.");
+		    }
+		}
+    }
+}
