@@ -1,0 +1,42 @@
+package pack1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
+
+public class update{
+	public static void main(String[] args) {
+		try {
+			Class.forName("org.postgresql.Driver");
+			String url = "jdbc:postgresql://192.168.1.17/cse_db24";
+			String username = "24becb71";
+			String password = "24becb71";
+			Connection connection = DriverManager.getConnection(url, username, password);
+			Scanner sc = new Scanner(System.in);
+			
+			String query = "INSERT INTO studentcs (roll_no, name, age, department, cgpa) VALUES (?, ?, ?, ?, ?)";
+		    PreparedStatement preparedStatement = connection.prepareStatement(query);
+
+		    System.out.print("Enter your Roll no.: ");
+		    preparedStatement.setInt(1, sc.nextInt());
+		    System.out.print("Enter your Name: ");
+		    preparedStatement.setString(2, sc.next());
+		    System.out.print("Enter your Age: ");
+		    preparedStatement.setInt(3, sc.nextInt());
+		    System.out.print("Enter your Branch: ");
+		    preparedStatement.setString(4, sc.next());
+		    System.out.print("Enter your CGPA: ");
+		    preparedStatement.setDouble(5, sc.nextDouble());
+		    
+		    int rows = preparedStatement.executeUpdate();
+
+		    if (rows > 0) {		    
+		    	System.out.println("Record inserted successfully!");
+		    }
+			connection.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
