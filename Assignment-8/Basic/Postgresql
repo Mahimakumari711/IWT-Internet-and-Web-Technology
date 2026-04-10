@@ -1,0 +1,26 @@
+Method 1 :
+
+CREATE TABLE student_24 (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(50),
+    course VARCHAR(30),
+    age INT,
+    cgpa FLOAT
+);
+
+
+Method 2 :
+
+CREATE DATABASE college_db;
+
+USE college_db;
+
+CREATE TABLE student (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    email VARCHAR(50),
+    course VARCHAR(30),
+    age INT,
+    cgpa FLOAT
+);
