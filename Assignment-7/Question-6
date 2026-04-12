@@ -1,15 +1,15 @@
-package pack1;
+package pack;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Scanner;
 
-public class update{
+public class Update{
 	public static void main(String[] args) {
 		try {
 			Class.forName("org.postgresql.Driver");
-			String url = "jdbc:postgresql://192.168.1.17/cse_db24";
+			String url = "jdbc:postgresql://192.168.1.17:5432/cse_db24";
 			String username = "24becb71";
 			String password = "24becb71";
 			Connection connection = DriverManager.getConnection(url, username, password);
@@ -40,3 +40,12 @@ public class update{
 		}
 	}
 }
+
+Output :
+
+Enter your Roll no.: 111
+Enter your Name: Mohan 
+Enter your Age: 21
+Enter your Branch: ECE
+Enter your CGPA: 8.7
+Record inserted successfully!
