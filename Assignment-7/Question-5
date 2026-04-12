@@ -1,4 +1,4 @@
-package Pack1;
+package pack;
 
 	import java.sql.Connection;
 	import java.sql.DriverManager;
@@ -6,14 +6,14 @@ package Pack1;
 	import java.sql.SQLException;
 	import java.sql.Statement;
 
-	public class display {
+	public class Display {
 	    public static void main(String[] args) {
 
-	        String url ="jdbc:postgresql://192.168.1.17/cse_db24";
+	        String url ="jdbc:postgresql://192.168.1.17:5432/cse_db24";
 	        String user = "24bcsf87";
 	        String password = "24bcsf87";
 	        
-	        String query = "SELECT * FROM student";
+	        String query = "SELECT * FROM students";
 
 	        try 
 	        {
@@ -21,8 +21,7 @@ package Pack1;
 	             Statement stmt = conn.createStatement();
 	             ResultSet rs = stmt.executeQuery(query);
 	             
-	             System.out.println("Student Records ")
-	             //System.out.println("Roll No | Name | Age | Department | CGPA");
+	             System.out.println("Student Records ");
 	             System.out.println("------------------------------------------");
 	             
 	             while (rs.next()) 
@@ -32,13 +31,11 @@ package Pack1;
 	                int age = rs.getInt("age");
 	                String department = rs.getString("department");
 	                float cgpa = rs.getFloat("cgpa");
-
-	                //System.out.printf("%d | %s | %d | %s | %.2f%n", rollNo, name, age, department, cgpa);
 	                
 	                System.out.println("RollNo : "+rollNo);
 	                System.out.println("Name : "+name);
 	                System.out.println("Age : "+age);
-	                System.out.println("Department : "+dept);
+	                System.out.println("Department : "+department);
 	                System.out.println("CGPA : "+cgpa);
 	                System.out.println("------------------------------------------");
 	            }
@@ -49,4 +46,26 @@ package Pack1;
 	        }
 	    }
 	}
-	
+
+Output :
+
+Student Records 
+------------------------------------------
+RollNo : 101
+Name : Rahul
+Age : 20
+Department : CSE
+CGPA : 8.5
+------------------------------------------
+RollNo : 102
+Name : Anita
+Age : 21
+Department : ECE
+CGPA : 9.1
+------------------------------------------
+RollNo : 11
+Name : Rohan
+Age : 22
+Department : CSE
+CGPA : 9.7
+------------------------------------------
