@@ -1,11 +1,12 @@
 package pack;
 
 import java.sql.*;
+import java.util.Scanner; 
 
 public class InsertStudentRecord {
     public static void main (String [] args )
     {
-        String url ="jdbc:postgresql://192.168.1.17/cse_db24";
+        String url ="jdbc:postgresql://192.168.1.17:5432/cse_db24";
 		String username = "24bcsf87";
 		String password = "24bcsf87";
 		
@@ -21,7 +22,6 @@ public class InsertStudentRecord {
 		    
 		    System.out.print("Enter name : ");
 		    String name = sc.nextLine();
-		    sc.nextLine();
 		    
 		    System.out.print("Enter age : ");
 		    int age = sc.nextInt();
@@ -45,7 +45,7 @@ public class InsertStudentRecord {
 		    
 		    int rows = pstmt.executeUpdate();
 		    
-		    if(row>0)
+		    if(rows > 0)
 		    {
 		        System.out.print("Student record inserted successfully!");
 		    }
@@ -64,3 +64,12 @@ public class InsertStudentRecord {
 		}
     }
 }
+
+Output :
+
+Enter Roll No. : 11
+Enter name : Rohan
+Enter age : 22
+Enter Department : CSE
+Enter CGPA : 9.7
+Student record inserted successfully!
