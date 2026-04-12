@@ -1,20 +1,20 @@
 package pack;
 import java.sql.*;
-import java.sql.DriverManager;
+import java.lang.*;
 
-public class Text1 {
+public class Test1 {
 	public static void main(String args[])
 	{
 		try
 		{
 			String driver ="org.postgresql.Driver";
-			String url ="jdbc:postgresql://192.168.1.17/cse_db24";
+			String url ="jdbc:postgresql://192.168.1.17:5432/cse_db24";
 			String username = "24bcsf87";
 			String password = "24bcsf87";
 			Class.forName(driver);
 			Connection con = DriverManager.getConnection(url,username,password);
 			
-			if(con !=null)
+			if(con != null)
 			{
 				System.out.println("Connected .......");
 			}
@@ -26,3 +26,7 @@ public class Text1 {
 			}
 		}
 	}
+
+Output :
+
+Connected .......
