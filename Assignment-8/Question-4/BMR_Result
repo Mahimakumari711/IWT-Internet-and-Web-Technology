@@ -1,0 +1,74 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BMR Result</title>
+<style>
+    body { font-family: Arial, sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; text-align: center; }
+    .result { background: #e8f5e8; padding: 20px; border-radius: 10px; margin: 20px 0; }
+    .back-btn { background: #2196F3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+</style>
+</head>
+<body>
+    <h2>BMR Calculation Result</h2>
+    
+    <%
+    // Get and validate parameters
+    String ageStr = request.getParameter("age");
+    String heightStr = request.getParameter("height");
+    String weightStr = request.getParameter("weight");
+    String gender = request.getParameter("gender");
+    
+    double bmr = 0;
+    boolean valid = true;
+    String errorMsg = "";
+    
+    try {
+        int age = Integer.parseInt(ageStr);
+        double height = Double.parseDouble(heightStr);
+        double weight = Double.parseDouble(weightStr);
+        
+        // Validate inputs
+        if (age < 1 || age > 120) {
+            valid = false;
+            errorMsg = "Age must be between 1-120 years";
+        } else if (height < 50 || height > 250) {
+            valid = false;
+            errorMsg = "Height must be between 50-250 cm";
+        } else if (weight < 20 || weight > 500) {
+            valid = false;
+            errorMsg = "Weight must be between 20-500 kg";
+        } else if (gender == null || (!gender.equals("male") && !gender.equals("female"))) {
+            valid = false;
+            errorMsg = "Please select gender";
+        } else {
+            // Calculate BMR using Harris-Benedict formula
+            if (gender.equals("male")) {
+                bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+            } else {
+                bmr = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+            }
+        }
+    } catch (Exception e) {
+        valid = false;
+        errorMsg = "Please enter valid numbers";
+    }
+    %>
+    
+    <% if (!valid) { %>
+        <div style="background: #ffebee; color: #c62828; padding: 15px; border-radius: 5px; margin: 20px 0;">
+            <strong>Error:</strong> <%= errorMsg %>
+        </div>
+        <a href="bmrCalculator.jsp" class="back-btn">← Try Again</a>
+    <% } else { %>
+        <div class="result">
+            <h3>Your BMR is:</h3>
+            <h2><%= String.format("%.0f", bmr) %> Calories/day</h2>
+            <p>This is the number of calories your body needs at rest.</p>
+        </div>
+        <a href="bmrCalculator.jsp" class="back-btn">← Calculate Again</a>
+    <% } %>
+</body>
+</html>
