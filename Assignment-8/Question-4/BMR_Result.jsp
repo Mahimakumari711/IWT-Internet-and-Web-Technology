@@ -15,7 +15,6 @@
     <h2>BMR Calculation Result</h2>
     
     <%
-    // Get and validate parameters
     String ageStr = request.getParameter("age");
     String heightStr = request.getParameter("height");
     String weightStr = request.getParameter("weight");
@@ -30,7 +29,6 @@
         double height = Double.parseDouble(heightStr);
         double weight = Double.parseDouble(weightStr);
         
-        // Validate inputs
         if (age < 1 || age > 120) {
             valid = false;
             errorMsg = "Age must be between 1-120 years";
@@ -44,7 +42,6 @@
             valid = false;
             errorMsg = "Please select gender";
         } else {
-            // Calculate BMR using Harris-Benedict formula
             if (gender.equals("male")) {
                 bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5;
             } else {
